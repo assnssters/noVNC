@@ -103,7 +103,7 @@
 
     <div id="noVNC_fallback_error" class="noVNC_center">
         <div>
-            <div>noVNC encountered an error:</div>
+            <div>noVNC đã bị lỗi:</div>
             <br>
             <div id="noVNC_fallback_errormsg"></div>
         </div>
@@ -184,7 +184,7 @@
                     <img alt="" src="app/images/clipboard.svg"> Clipboard
                 </div>
                 <p class="noVNC_subheading">
-                    Edit clipboard content in the textarea below.
+                    Chỉnh sửa content clipboard trong chôc này.
                 </p>
                 <textarea id="noVNC_clipboard_text" rows=5></textarea>
             </div>
@@ -209,14 +209,14 @@
                         <label>
                             <input id="noVNC_setting_shared" type="checkbox"
                                    class="toggle">
-                            Shared mode
+                            Chế độ chia sẽ
                         </label>
                     </li>
                     <li>
                         <label>
                             <input id="noVNC_setting_view_only" type="checkbox"
                                    class="toggle">
-                            View only
+                            Chỉ nhìn
                         </label>
                     </li>
                     <li><hr></li>
@@ -224,33 +224,33 @@
                         <label>
                             <input id="noVNC_setting_view_clip" type="checkbox"
                                    class="toggle">
-                            Clip to window
+                            Căng chỉnh vừa màn hình
                         </label>
                     </li>
                     <li>
-                        <label for="noVNC_setting_resize">Scaling mode:</label>
+                        <label for="noVNC_setting_resize">Chế độ cửa sổ:</label>
                         <select id="noVNC_setting_resize" name="vncResize">
-                            <option value="off">None</option>
-                            <option value="scale">Local scaling</option>
-                            <option value="remote">Remote resizing</option>
+                            <option value="off">Tắt</option>
+                            <option value="scale">Bên máy</option>
+                            <option value="remote">Bên remote</option>
                         </select>
                     </li>
                     <li><hr></li>
                     <li>
-                        <div class="noVNC_expander">Advanced</div>
+                        <div class="noVNC_expander">Nâng Cao</div>
                         <div><ul>
                             <li>
-                                <label for="noVNC_setting_quality">Quality:</label>
+                                <label for="noVNC_setting_quality">Chất lượng hình:</label>
                                 <input id="noVNC_setting_quality" type="range" min="0" max="9" value="6">
                             </li>
                             <li>
-                                <label for="noVNC_setting_compression">Compression level:</label>
+                                <label for="noVNC_setting_compression">Mức nén:</label>
                                 <input id="noVNC_setting_compression" type="range" min="0" max="9" value="2">
                             </li>
                             <li><hr></li>
                             <li>
                                 <label for="noVNC_setting_repeaterID">Repeater ID:</label>
-                                <input id="noVNC_setting_repeaterID" type="text" value="">
+                                <input id="noVNC_setting_repeaterID" type="Nhập" value="">
                             </li>
                             <li>
                                 <div class="noVNC_expander">WebSocket</div>
@@ -259,11 +259,11 @@
                                         <label>
                                             <input id="noVNC_setting_encrypt" type="checkbox"
                                                    class="toggle">
-                                            Encrypt
+                                            Mã hoá
                                         </label>
                                     </li>
                                     <li>
-                                        <label for="noVNC_setting_host">Host:</label>
+                                        <label for="noVNC_setting_host">Địa chỉ:</label>
                                         <input id="noVNC_setting_host">
                                     </li>
                                     <li>
@@ -281,11 +281,11 @@
                                 <label>
                                     <input id="noVNC_setting_reconnect" type="checkbox"
                                            class="toggle">
-                                    Automatic reconnect
+                                    Tự động kết nối lại
                                 </label>
                             </li>
                             <li>
-                                <label for="noVNC_setting_reconnect_delay">Reconnect delay (ms):</label>
+                                <label for="noVNC_setting_reconnect_delay">Kết nối lại delay (ms):</label>
                                 <input id="noVNC_setting_reconnect_delay" type="number">
                             </li>
                             <li><hr></li>
@@ -293,13 +293,13 @@
                                 <label>
                                     <input id="noVNC_setting_show_dot" type="checkbox"
                                            class="toggle">
-                                    Show dot when no cursor
+                                    Hiện dấu . nếu không có chuột
                                 </label>
                             </li>
                             <li><hr></li>
                             <!-- Logging selection dropdown -->
                             <li>
-                                <label>Logging:
+                                <label>Đăng nhập:
                                     <select id="noVNC_setting_logging" name="vncLogging">
                                     </select>
                                 </label>
@@ -318,7 +318,7 @@
             <!-- Connection controls -->
             <input type="image" alt="Disconnect" src="app/images/disconnect.svg"
                 id="noVNC_disconnect_button" class="noVNC_button"
-                title="Disconnect">
+                title="Ngắt kết nối">
 
             </div>
         </div>
@@ -349,7 +349,7 @@
     <div class="noVNC_center noVNC_connect_layer">
     <div id="noVNC_verify_server_dlg" class="noVNC_panel"><form>
         <div class="noVNC_heading">
-            Server identity
+            nhận dạng máy chủ
         </div>
         <div>
             The server has provided the following identifying information:
@@ -373,14 +373,14 @@
     <div class="noVNC_center noVNC_connect_layer">
     <div id="noVNC_credentials_dlg" class="noVNC_panel"><form>
         <div class="noVNC_heading">
-            Credentials
+            Xác minh
         </div>
         <div id="noVNC_username_block">
             <label for="noVNC_username_input">Username:</label>
             <input id="noVNC_username_input">
         </div>
         <div id="noVNC_password_block">
-            <label for="noVNC_password_input">Password:</label>
+            <label for="noVNC_password_input">Mật khẩu:</label>
             <input id="noVNC_password_input" type="password">
         </div>
         <div class="button_row">
