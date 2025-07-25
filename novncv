@@ -1,3 +1,3 @@
 # usage ./novncf <port vnc> <port web>
 # it quick novnc_proxy :))
-./utils/novnc_proxy --vnc localhost:$1 --listen localhost:$2
+./utils/novnc_proxy --vnc localhost:$1 --listen 0.0.0.0:$2
