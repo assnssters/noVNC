@@ -1,4 +1,5 @@
 mkdir ~/.vnc ; sleep 1
+echo -e '#!/bin/sh\nstartxfce4 &' > ~/.vnc/xstartup && chmod +x ~/.vnc/xstartup
 echo "123456" | vncpasswd -f > ~/.vnc/passwd && chmod 600 ~/.vnc/passwd
 for i in {0..99};do vncserver -kill :$i 2>/dev/null;done
 vncserver :1
